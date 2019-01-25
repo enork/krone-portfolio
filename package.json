@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run css-build & react-scripts build",
     "test": "react-scripts test",
     "css-build": "node-sass --omit-source-map-url src/sass/mystyles.scss src/css/mystyles.css",
     "css-watch": "npm run css-build -- --watch"
