@@ -2,12 +2,23 @@
 @import "../../node_modules/bulma/bulma.sass";
 
 .navbar {
-    padding: 1.2rem 0;
     border-width: 2px;
 }
 
-.navbar-burger span {
-    color: hsl(171, 100%, 41%);
+.nav-section .navbar-menu {
+    box-shadow: none;
+}
+
+.navbar-burger {
+
+    height: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    span {
+        color: hsl(171, 100%, 41%);
+    }
 }
 
 .button.is-outlined {
@@ -36,8 +47,11 @@
 
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
 
     .container {
+        padding-top: 1rem;
+
         box-shadow: none;
 
         .content figure {
@@ -54,7 +68,11 @@
 
         .card {
             border-radius: 12px;
-    
+            
+            .media-content {
+                overflow-x: initial;
+            }
+
             img {
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
@@ -80,6 +98,15 @@
                     border-right: none;
                 }
             }
+        }
+    }
+}
+
+.section.contact {
+    @media screen and (min-width: 769px) {
+        .container {
+            max-width: 768px;
+            margin: auto;
         }
     }
 }

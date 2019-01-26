@@ -1,7 +1,6 @@
 import React from 'react';
-import SkillComponent from './Skills/SkillComponent';
 import NavComponent from './Navbar/NavComponent';
-import ProfileComponent from './Profile/ProfileComponent';
+import ContactComponent from './Contact/ContactComponent';
 import FooterComponent from './Footer/FooterComponent';
 
 class App extends React.Component {
@@ -10,7 +9,7 @@ class App extends React.Component {
         return (
             <div className='has-background-primary'>
                 <NavComponent />
-                {/*TODO: contact form*/}
+                <ContactComponent />
                 <FooterComponent />
             </div>
         );

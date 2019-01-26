@@ -31,14 +31,14 @@ class NavComponent extends React.Component {
                                 </Link>
                             </div>
 
-                            <a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                            {/*<a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
-                            </a>
+                            </a>*/}
                         </div>
 
-                        <div id='navMenu' className="navbar-menu has-background-grey-dark">
+                        {/*<div id='navMenu' className="navbar-menu has-background-grey-dark">
                             <div className="navbar-end">
                                 <div className="navbar-item">
                                     <div className="buttons">
@@ -46,7 +46,7 @@ class NavComponent extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </nav>
                 {/*TODO: resume download*/}
