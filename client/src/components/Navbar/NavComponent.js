@@ -31,22 +31,23 @@ class NavComponent extends React.Component {
                                 </Link>
                             </div>
 
-                            {/*<a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                            <a role='button' className="navbar-burger" href='#' data-target="navMenu" aria-label="menu" aria-expanded="false">
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
-                            </a>*/}
+                            </a>
                         </div>
 
-                        {/*<div id='navMenu' className="navbar-menu has-background-grey-dark">
+                        <div id='navMenu' className="navbar-menu has-background-grey-dark">
                             <div className="navbar-end">
                                 <div className="navbar-item">
                                     <div className="buttons">
-                                        <Link to='/contact' className='button is-medium is-primary is-rounded is-outlined'>Contact Me</Link>
+                                        {/*<Link to='/contact' className='button is-medium is-primary is-rounded is-outlined'>Contact Me</Link>*/}
+                                        <a className='button is-medium is-primary is-rounded is-outlined' href='mailto:enork789@gmail.com'>Contact Me</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>*/}
+                        </div>
                     </div>
                 </nav>
                 {/*TODO: resume download*/}
