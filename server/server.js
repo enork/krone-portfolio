@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const emailjsCom = require('emailjs-com');
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
@@ -18,17 +17,7 @@ app.post('/api/world', (req, res) => {
 });
 app.post('/api/contact', (req, res) => {
   console.log(req.body);
-
-  emailjsCom.send('yahoo', 'portfolio_site_contact_form', req.body, 'user_ixCcI9zXyWGZpj0tbxFpz')
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-       res.send('SUCCESS');
-    }, function(error) {
-       console.log('FAILED...', error);
-        res.send('FAIL');
-    });
-
-  res.send('');
+  res.send('SUCCESS');
 });
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
