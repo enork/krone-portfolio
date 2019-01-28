@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "npm run install-server && npm run install-client",
-    "start": "npm run start-server",
+    "start": "npm run build-client && npm run start-server",
     "start-dev": "npm-run-all --parallel start-server-dev start-client-dev",
-    "build": "cd client && npm run build",
-    "start-client": "cd client && npm start",
+    "build-client": "cd client && npm run build",
     "start-client-dev": "cd client && npm run start-dev",
     "start-server": "cd server && npm start",
     "start-server-dev": "cd server && npm run start-dev",
