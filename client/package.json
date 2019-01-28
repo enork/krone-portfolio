@@ -15,6 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
+    "start-dev": "npm run css-build && npm-run-all --parallel css-watch start",
     "build": "npm run css-build & react-scripts build",
     "test": "react-scripts test",
     "css-build": "node-sass --omit-source-map-url src/sass/mystyles.scss src/css/mystyles.css",
